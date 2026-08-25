@@ -1,0 +1,206 @@
+---
+# try also 'default' to start simple
+# theme: seriph
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
+# some information about your slides (markdown enabled)
+title: ENGR 2111 Engineering Leadership
+info: |
+  ## Mastering Yourself: Foundations of Leadership
+
+  Understanding the Mindset of Great Engineering & Technical Leaders
+# apply UnoCSS classes to the current slide
+class: text-center
+# https://sli.dev/features/drawing
+drawings:
+  persist: false
+# slide transition: https://sli.dev/guide/animations.html#slide-transitions
+transition: slide-left
+# enable Comark Syntax: https://comark.dev/syntax/markdown
+comark: true
+# duration of the presentation
+duration: 60min
+contextMenu: false
+background: /smu-mustangs.webp
+---
+
+<div class="text-start h-full flex flex-col">
+  <div>
+    <h2 class="text-smu-secondaryRed !text-4xl font-bold">Module A</h2>
+    <p class="text-smu-light !text-4xl">Mastering Yourself: Foundations of Leadership</p>
+    <h2 class="text-smu-secondaryRed !text-4xl font-bold">Week 1</h2>
+    <p class="text-smu-light !text-4xl">Understanding the Mindset of Great Engineering & Technical Leaders</p>
+  </div>
+
+  <div @click="$slidev.nav.next" class="mt-12 py-1 self-center justify-self-end" hover:bg="white op-10">
+    Press Space for next page <carbon:arrow-right />
+  </div>
+</div>
+
+---
+layout: Person
+title: Meet the Class Manager
+person:
+  name: Lyz Ineza
+  image: /lys.jpg
+  title: Env Eng MS Candidate
+  org: SMU
+---
+
+## How to be successful
+
+- Complete the assignments and submit them on time
+- Engage and ask questions of the lecturers and speakers
+- Attend class, be punctual and respectful
+- Take building your professional network seriously
+- If you have a problem meeting expectations, see me sooner rather than later – do not wait until its too late.
+- I’m here to help you succeed!
+
+<style scoped>
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  li {
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+---
+image: /slide-class-designed-practical.png
+layout: image
+preload: true
+title: 'Class is Designed to be Practical'
+---
+
+---
+layout: Person
+title: About Me
+person:
+    name: Ryan Sheehan
+    image: /ryan.jpg
+    title: Fractional CTO
+    org: Prosper CTO
+---
+
+- SMU Guildhall graduate & Cox graduate
+- Started in video games, biggest IP was Iron Man 2 (2010) for Nintendo Wii and Sony PSP
+- 18 years in software development
+- Type 1 Diabetes is a big part of my life
+- Dance Dad for two beautiful daughters
+- I’m here to help you succeed!
+
+<style scoped>
+    ul {
+        margin-top: 2.5rem;        
+    }
+
+    li {
+        font-size: 1.1em;
+        margin-bottom: 0.5rem;
+    }
+</style>
+
+---
+title: What is a Leadership Mindset
+layout: HartCenter
+---
+
+## What is a Leadership Mindset and why is it important for Engineering Leaders?
+
+<div class="w-38">
+  <img src="/question-mark.svg" alt="quesiton mark" class="scale-y-75" />
+</div>
+<img src="/hart.png" alt="Hart Center Logo" class="w-18 -mt-10" />
+
+<style>
+  h2 {
+    color: var(--smu-primary-blue);
+    font-weight: 800;
+    font-size: 2.5em;
+  }
+</style>
+
+---
+image: /slide-growth-mindset.png
+layout: image
+preload: true
+title: 'The Growth Mindset'
+---
+
+---
+image: /slide-mindset-tools.png
+layout: image
+preload: true
+title: 'Mindset Tools for Good Engineering Leadership'
+---
+
+---
+image: /slide-comfort-zone-is-a-trap.png
+layout: image
+preload: true
+title: 'Being Comfortable in the Comfort Zone Is a Trap'
+---
+
+---
+layout: HartCenter2Col
+title: This Week's Assignment
+---
+
+## This Weeks Assignment
+
+::left::
+
+### Create a free LinkedIn profile with:
+
+- Professional headshot
+- Background image (SMU or major-related)
+- Headline
+- At least 1 role under experience (student, part-time job, etc.)
+- Education section completed
+- Connect with your class manager and follow the Hart Center
+
+::right::
+
+### Required Tasks:
+
+- Connect with your class manager on LinkedIn and follow the hart Center on LinkedIn
+- Email your mentor to introduce yourself and share what you hope to gain from mentoring. CC your class manager.
+- Write a short reflection using one of the 3 mindset frameworks on how you might apply it to your life.
+- Join at least one student club or organization. Tell your class manager which one.
+- Schedule a career development appointment for this semester using the link on canvas. After you receive the confirmation email, forward it to your class manager
+
+<style scoped>
+  h2 {
+    font-size: 2em;
+    color: var(--smu-primary-red);
+  }
+
+  h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-block-end: 8px;
+  }
+</style>
+
+---
+layout: HartEvents
+title: Hart to Heart Seminars
+---
+
+- September 15th 6-7:15pm
+- October 15th, 6-7:15pm
+- November 18th, 6-17:15pm
+
+---
+image: /slide-rewire-your-brain-for-confidence.png
+layout: image
+preload: true
+title: 'Rewire Your Brain for Confidence'
+---
+
+---
+src: ./pages/leadership-mindset-frameworks.md
+---
+

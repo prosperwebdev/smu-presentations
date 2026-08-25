@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/engr2111-week1/(.*)",
+      "destination": "/engr2111-week1/index.html"
+    },
+    {
+      "source": "/engr2111-week2/(.*)",
+      "destination": "/engr2111-week2/index.html"
+    }
+  ],
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "dist"
+}
