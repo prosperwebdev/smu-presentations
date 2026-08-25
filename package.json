@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "build": "run-s build:engr2111",    
-    "dev": "slidev engr2111-week1.md --port 3030",
+    "dev": "slidev engr2111-1.md --port 3030",
     "export": "slidev export",
-    "mcp": "slidev mcp engr2111-week1.md",
+    "mcp": "slidev mcp engr2111-1.md",
     "install-slidev-skills": "pnpm run dlx skills add slidevjs/slidev",
-    "build:engr2111": "slidev build engr2111-week1.md engr2111-week2.md",
-    "export:engr2111:week1": "slidev export engr2111-week1.md --format pptx --dark true"
+    "build:engr2111": "slidev build engr2111-1.md engr2111-2.md",
+    "export:engr2111:1": "slidev export engr2111-1.md --format pptx --dark true"
   },
   "dependencies": {
     "@slidev/cli": "^52.19.1",
