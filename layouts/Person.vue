@@ -19,6 +19,8 @@ interface Props {
 
 const props = defineProps<Props>();
 const { $slidev } = useSlideContext();
+
+const baseURL = import.meta.env.BASE_URL;
 </script>
 
 <template>
@@ -42,7 +44,7 @@ const { $slidev } = useSlideContext();
         <div class="w-48">
           <img
             :alt="props.person.name"
-            :src="props.person.image"
+            :src="baseURL + props.person.image"
             class="w-full h-full object-cover block rounded-xl shadow-lg"
           />
         </div>
