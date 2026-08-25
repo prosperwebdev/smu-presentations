@@ -3,13 +3,16 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "run-s build:engr2111",    
+    "build": "run-s build:engr2111 copy:root",
     "dev": "slidev engr2111-1.md --port 3030",
     "export": "slidev export",
     "mcp": "slidev mcp engr2111-1.md",
     "install-slidev-skills": "pnpm run dlx skills add slidevjs/slidev",
-    "build:engr2111": "slidev build engr2111-1.md engr2111-2.md",
-    "export:engr2111:1": "slidev export engr2111-1.md --format pptx --dark true"
+    "build:engr2111": "run-p build:engr2111:*",
+    "build:engr2111:1": "slidev build engr2111-1.md --base /engr2111-1/ --out dist/engr2111-1",
+    "build:engr2111:2": "slidev build engr2111-2.md --base /engr2111-2/ --out dist/engr2111-2",
+    "export:engr2111:1": "slidev export engr2111-1.md --format pptx --dark true",
+    "copy:root": "copyfiles -f root/* dist"
   },
   "dependencies": {
     "@slidev/cli": "^52.19.1",
@@ -23,6 +26,7 @@
     "@iconify-json/fluent": "^1.2.57",
     "@iconify-json/ri": "^1.2.10",
     "@iconify-json/streamline-flex": "^1.2.3",
+    "copyfiles": "^2.4.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.9.6",
     "prettier-plugin-slidev": "^1.0.5"
