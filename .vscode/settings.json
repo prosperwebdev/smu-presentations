@@ -5,5 +5,10 @@
         "comark",
         "mindmap",
         "slidev"
+    ],
+    "slidev.include": [
+        "**/slides.md",
+        "engr2111-1.md",
+        "engr2111-2.md"
     ]
 }
