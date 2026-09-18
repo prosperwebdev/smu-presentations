@@ -41,7 +41,7 @@ const props = defineProps<Props>();
            class="absolute inset-0 h-auto max-w-[200%] translate-y-[9%] translate-x-[9%] opacity-10 pointer-events-none z-0"
            aria-hidden="true" />
     
-    <div class="relative text-smu-dark px-8 pt-4">
+    <div class="flex-1 relative text-smu-dark px-8 pt-4">
       <div class="">  
         <slot />
       </div>

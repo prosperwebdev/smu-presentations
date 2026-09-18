@@ -7,6 +7,14 @@
     {
       "source": "/engr2111-2/(.*)",
       "destination": "/engr2111-2/index.html"
+    },
+    {
+      "source": "/engr2111-3/(.*)",
+      "destination": "/engr2111-3/index.html"
+    },
+    {
+      "source": "/engr2111-4/(.*)",
+      "destination": "/engr2111-4/index.html"
     }
   ],
   "buildCommand": "pnpm run build",

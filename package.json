@@ -4,17 +4,19 @@
   "private": true,
   "scripts": {
     "build": "run-s build:engr2111 copy:root",
-    "dev": "slidev engr2111-3.md --port 3030",
+    "dev": "slidev engr2111-4.md --port 3030",
     "export": "slidev export",
-    "mcp": "slidev mcp engr2111-3.md",
+    "mcp": "slidev mcp engr2111-4.md",
     "install-slidev-skills": "pnpm run dlx skills add slidevjs/slidev",
     "build:engr2111": "run-p build:engr2111:*",
     "build:engr2111:1": "slidev build engr2111-1.md --base /engr2111-1/ --out dist/engr2111-1",
     "build:engr2111:2": "slidev build engr2111-2.md --base /engr2111-2/ --out dist/engr2111-2",
     "build:engr2111:3": "slidev build engr2111-3.md --base /engr2111-3/ --out dist/engr2111-3",
+    "build:engr2111:4": "slidev build engr2111-4.md --base /engr2111-4/ --out dist/engr2111-4",
     "export:engr2111:1": "slidev export engr2111-1.md --format pptx --dark true",
     "export:engr2111:2": "slidev export engr2111-2.md --format pptx --dark true",
     "export:engr2111:3": "slidev export engr2111-3.md --format pptx --dark true",
+    "export:engr2111:4": "slidev export engr2111-4.md --format pptx --dark true",
     "copy:root": "copyfiles -f root/* dist"
   },
   "dependencies": {
